@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ <img id = "googleLogo" src = "https://upload.wikimedia.org/wikipedia/commons/2/2b/Transparent_google_logo_%282011-2015%29.png" alt = "google photo">
+
+<div id="mainDivReal">    
+  <div id="mainDiv">  
+    <div id="advanWords">
+      <hr>
+      <h2 id="advanSearch"> Advanced Search </h2>
+      <h3> Find pages with... </h3>
+      <p> all these words: </p>
+      <p> this exact word or phrase: </p>
+      <p> any of these words: </p>
+      <p> none of these words: </p>
+    </div>
+
+    <div id="advanInputs">
+      <input class="advanInputBox2" type="text">
+      <input class="advanInputBox2" type="text">
+      <input class="advanInputBox2" type="text">
+      <input class="advanInputBox2" type="text">
+    </div>
+
+    <div id="exampleDiv">
+      <div id="advanInstructions">
+        <div class="instructionStyle">
+          <p class="instructions"> Type the important words: </p>
+          <p class="instructions"> Put exact words in quotes: </p>
+          <p class="instructions"> Type OR between all the words you want: </p>
+          <p class="instructions"> Put a minus sign just before words you don't want: </p>
+        </div>
+      </div>
+
+      <div class="advanExamples">
+        <p class="instructions2"> tricolor rat terrier </p>
+        <p class="instructions2"> "rat terrier" </p>
+        <p class="instructions2"> miniature OR standard </p>
+        <p class="instructions2"> -rodent, -"Jack Russell" </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottomHalf">  
+    <div id="narrowResults">
+      <h3> Then narrow your results by... </h3>
+      <p class="narrowText"> language: </p>
+      <p class="narrowText"> region: </p>
+      <p class="narrowText"> last update: </p>
+      <p class="narrowText"> site or domain: </p>
+      <p class="narrowText"> terms appearing: </p>
+      <p class="narrowText"> file rights </p>
+      <a id="usagerights" href="https://support.google.com/websearch/answer/29508?hl=en&visit_id=638564241431599579-3942953837&p=ws_images_usagerights&rd=1">usage rights</a>
+    </div>
+
+    <div id="advanInputs2">
+      <input class="advanInputBox" name = "Language" list="languages" placeholder = "any language">
+      <datalist id="languages">
+        <option value="Any language"></option>
+        <option value="Afrikaans"></option>
+        <option value="Arabic"></option>
+        <option value="Armenian"></option>
+        <option value="Belarusian"></option>
+        <option value="Bulgarian"></option>
+        <option value="Catalan"></option>
+        <option value="Chinese (Simplified)"></option>
+        <option value="Danish"></option>
+        <option value="Dutch"></option>
+        <option value="English"></option>
+        <option value="Esperanto"></option>
+        <option value="Estonian"></option>
+        <option value="Filipino"></option>
+        <option value="Finnish"></option>
+        <option value="French"></option>
+        <option value="German"></option>
+        <option value="Greek"></option>
+        <option value="Hebrew"></option>
+        <option value="Hindi"></option>
+        <option value="Hungarian"></option>
+        <option value="Icelandic"></option>
+        <option value="Indonesian"></option>
+        <option value="Italian"></option>
+        <option value="Japanese"></option>
+        <option value="Korean"></option>
+        <option value="Latvian"></option>
+        <option value="Lithuanian"></option>
+        <option value="Norwegian"></option>
+        <option value="Persian"></option>
+        <option value="Polish"></option>
+        <option value="Portuguese"></option>
+        <option value="Romanian"></option>
+        <option value="Russian"></option>
+        <option value="Serbian"></option>
+        <option value="Slovak"></option>
+        <option value="Slovenian"></option>
+        <option value="Spanish"></option>
+        <option value="Swahili"></option>
+        <option value="Swedish"></option>
+        <option value="Thai"></option>
+        <option value="Turkish"></option>
+        <option value="Ukrainian"></option>
+        <option value="Vietnamese"></option>
+      </datalist>
+ 
+      <input class="advanInputBox" list = "regions" placeholder= "any region" type="text">
+      <datalist id = "regions">
+        <option value="Afghanistan"></option>
+        <option value="Albania"></option>
+        <option value="Algeria"></option>
+        <option value="American Samoa"></option>
+        <option value="Andorra"></option>
+        <option value="Angola"></option>
+        <option value="Anguilla"></option>
+        <option value="Antarctica"></option>
+        <option value="Antigua & Barbuda"></option>
+        <option value="Argentina"></option>
+        <option value="Armenia"></option>
+        <option value="Aruba"></option>
+        <option value="Australia"></option>
+        <option value="Austria"></option>
+        <option value="Azerbaijan"></option>
+        <option value="Bahamas"></option>
+        <option value="Bahrain"></option>
+        <option value="Bangladesh"></option>
+        <option value="Barbados"></option>
+        <option value="Belarus"></option>
+        <option value="Belgium"></option>
+        <option value="Belize"></option>
+        <option value="Benin"></option>
+        <option value="Bermuda"></option>
+        <option value="Bhutan"></option>
+        <option value="Bolivia"></option>
+        <option value="Bosnia & Herzegovina"></option>
+        <option value="Botswana"></option>
+        <option value="Bouvet Island"></option>
+        <option value="Brazil"></option>
+        <option value="British Indian Ocean Territory"></option>
+        <option value="British Virgin Islands"></option>
+        <option value="Brunei"></option>
+        <option value="Bulgaria"></option>
+        <option value="Burkina Faso"></option>
+        <option value="Burundi"></option>
+        <option value="Cambodia"></option>
+        <option value="Cameroon"></option>
+        <option value="Canada"></option>
+        <option value="Cape Verde"></option>
+        <option value="Cayman Islands"></option>
+        <option value="Central African Republic"></option>
+        <option value="Chad"></option>
+        <option value="Chile"></option>
+        <option value="China"></option>
+        <option value="Christmas Island"></option>
+        <option value="Cocos (Keeling) Islands"></option>
+        <option value="Colombia"></option>
+        <option value="Comoros"></option>
+        <option value="Congo - Brazzaville"></option>
+        <option value="Congo - Kinshasa"></option>
+        <option value="Cook Islands"></option>
+        <option value="Costa Rica"></option>
+        <option value="Côte d'Ivoire"></option>
+        <option value="Croatia"></option>
+        <option value="Cuba"></option>
+        <option value="Cyprus"></option>
+        <option value="Czechia"></option>
+        <option value="Denmark"></option>
+        <option value="Djibouti"></option>
+        <option value="Dominica"></option>
+        <option value="Dominican Republic"></option>
+        <option value="Ecuador"></option>
+        <option value="Egypt"></option>
+        <option value="El Salvador"></option>
+        <option value="Equatorial Guinea"></option>
+        <option value="Eritrea"></option>
+        <option value="Estonia"></option>
+        <option value="Eswatini"></option>
+        <option value="Ethiopia"></option>
+        <option value="Falkland Islands (Islas Malvinas)"></option>
+        <option value="Faroe Islands"></option>
+        <option value="Fiji"></option>
+        <option value="Finland"></option>
+        <option value="France"></option>
+        <option value="French Guiana"></option>
+        <option value="French Polynesia"></option>
+        <option value="French Southern Territories"></option>
+        <option value="Gabon"></option>
+        <option value="Gambia"></option>
+        <option value="Georgia"></option>
+        <option value="Germany"></option>
+        <option value="Ghana"></option>
+        <option value="Gibraltar"></option>
+        <option value="Greece"></option>
+        <option value="Greenland"></option>
+        <option value="Grenada"></option>
+        <option value="Guadeloupe"></option>
+        <option value="Guam"></option>
+        <option value="Guatemala"></option>
+        <option value="Guinea"></option>
+        <option value="Guinea-Bissau"></option>
+        <option value="Guyana"></option>
+        <option value="Haiti"></option>
+        <option value="Heard & McDonald Islands"></option>
+        <option value="Honduras"></option>
+        <option value="Hong Kong"></option>
+        <option value="Hungary"></option>
+        <option value="Iceland"></option>
+        <option value="India"></option>
+        <option value="Indonesia"></option>
+        <option value="Iran"></option>
+        <option value="Iraq"></option>
+        <option value="Ireland"></option>
+        <option value="Israel"></option>
+        <option value="Italy"></option>
+        <option value="Jamaica"></option>
+        <option value="Japan"></option>
+        <option value="Jordan"></option>
+        <option value="Kazakhstan"></option>
+        <option value="Kenya"></option>
+        <option value="Kiribati"></option>
+        <option value="Kuwait"></option>
+        <option value="Kyrgyzstan"></option>
+        <option value="Laos"></option>
+        <option value="Latvia"></option>
+        <option value="Lebanon"></option>
+        <option value="Lesotho"></option>
+        <option value="Liberia"></option>
+        <option value="Libya"></option>
+        <option value="Liechtenstein"></option>
+        <option value="Lithuania"></option>
+        <option value="Luxembourg"></option>
+        <option value="Macao"></option>
+        <option value="Madagascar"></option>
+        <option value="Malawi"></option>
+        <option value="Malaysia"></option>
+        <option value="Maldives"></option>
+        <option value="Mali"></option>
+        <option value="Malta"></option>
+        <option value="Marshall Islands"></option>
+        <option value="Martinique"></option>
+        <option value="Mauritania"></option>
+        <option value="Mauritius"></option>
+        <option value="Mayotte"></option>
+        <option value="Mexico"></option>
+        <option value="Micronesia"></option>
+        <option value="Moldova"></option>
+        <option value="Monaco"></option>
+        <option value="Mongolia"></option>
+        <option value="Montserrat"></option>
+        <option value="Morocco"></option>
+        <option value="Mozambique"></option>
+        <option value="Myanmar (Burma)"></option>
+        <option value="Namibia"></option>
+        <option value="Nauru"></option>
+        <option value="Nepal"></option>
+        <option value="Netherlands"></option>
+        <option value="New Caledonia"></option>
+        <option value="New Zealand"></option>
+        <option value="Nicaragua"></option>
+        <option value="Niger"></option>
+        <option value="Nigeria"></option>
+        <option value="Niue"></option>
+        <option value="Norfolk Island"></option>
+        <option value="North Korea"></option>
+        <option value="North Macedonia"></option>
+        <option value="Northern Mariana Islands"></option>
+        <option value="Norway"></option>
+        <option value="Oman"></option>
+        <option value="Pakistan"></option>
+        <option value="Palau"></option>
+        <option value="Palestine"></option>
+        <option value="Panama"></option>
+        <option value="Papua New Guinea"></option>
+        <option value="Paraguay"></option>
+        <option value="Peru"></option>
+        <option value="Philippines"></option>
+        <option value="Pitcairn Islands"></option>
+        <option value="Poland"></option>
+        <option value="Portugal"></option>
+        <option value="Puerto Rico"></option>
+        <option value="Qatar"></option>
+        <option value="Réunion"></option>
+        <option value="Romania"></option>
+        <option value="Russia"></option>
+        <option value="Rwanda"></option>
+        <option value="Samoa"></option>
+        <option value="San Marino"></option>
+        <option value="São Tomé & Príncipe"></option>
+        <option value="Saudi Arabia"></option>
+        <option value="Senegal"></option>
+        <option value="Serbia"></option>
+        <option value="Seychelles"></option>
+        <option value="Sierra Leone"></option>
+        <option value="Singapore"></option>
+        <option value="Slovakia"></option>
+        <option value="Slovenia"></option>
+        <option value="Solomon Islands"></option>
+        <option value="Somalia"></option>
+        <option value="South Africa"></option>
+        <option value="South Georgia & South Sandwich Islands"></option>
+        <option value="South Korea"></option>
+        <option value="Spain"></option>
+        <option value="Sri Lanka"></option>
+        <option value="St. Helena"></option>
+        <option value="St. Kitts & Nevis"></option>
+        <option value="St. Lucia"></option>
+        <option value="St. Pierre & Miquelon"></option>
+        <option value="St. Vincent & Grenadines"></option>
+        <option value="Sudan"></option>
+        <option value="Suriname"></option>
+        <option value="Svalbard & Jan Mayen"></option>
+        <option value="Sweden"></option>
+        <option value="Switzerland"></option>
+        <option value="Syria"></option>
+        <option value="Taiwan"></option>
+        <option value="Tajikistan"></option>
+        <option value="Tanzania"></option>
+        <option value="Thailand"></option>
+        <option value="Togo"></option>
+        <option value="Tokelau"></option>
+        <option value="Tonga"></option>
+        <option value="Trinidad & Tobago"></option>
+        <option value="Tunisia"></option>
+        <option value="Türkiye"></option>
+        <option value="Turkmenistan"></option>
+        <option value="Turks & Caicos Islands"></option>
+        <option value="Tuvalu"></option>
+        <option value="U.S. Outlying Islands"></option>
+        <option value="U.S. Virgin Islands"></option>
+        <option value="Uganda"></option>
+        <option value="Ukraine"></option>
+        <option value="United Arab Emirates"></option>
+        <option value="United Kingdom"></option>
+        <option value="United States"></option>
+        <option value="Uruguay"></option>
+        <option value="Uzbekistan"></option>
+        <option value="Vanuatu"></option>
+        <option value="Vatican City"></option>
+        <option value="Venezuela"></option>
+        <option value="Vietnam"></option>
+        <option value="Wallis & Futuna"></option>
+        <option value="Western Sahara"></option>
+        <option value="Yemen"></option>
+        <option value="Zambia"></option>
+        <option value="Zimbabwe"></option>       
+      </datalist>
+    
+      <input class="advanInputBox" list = "time" placeholder="anytime" type="text">
+      <datalist id = "time">
+      <option value = "anytime"></option>
+      <option value = "past 24 hours"></option>
+      <option value = "past week"></option>
+      <option value = "past month"></option>
+      <option value = "past year"></option>
+      </datalist>
+   
+      <input class="advanInputBox" type="text">
+
+      <input class="advanInputBox" list ="pagelocation" placeholder="anywhere in the page" type="text">
+      <datalist id = "pagelocation">
+       <option value = "anywhere in the page"></option>
+       <option value = "in the title of the page"></option>
+       <option value = "in the text of the page"></option>
+       <option value = "in the URL of the page"></option>
+       <option value = "in links to the page"></option>
+      </datalist>
+
+      <input class="advanInputBox" list = "fileFormat" placeholder="any format" type="text">
+
+      <datalist id = "fileFormat">
+          <option value="any format">
+          <option value="Adobe Acrobat PDF (.pdf)">
+          <option value="Adobe Postscript (.ps)">
+          <option value="Autodesk DWF (.dwf)">
+          <option value="Google Earth KML (.kml)">
+          <option value="Google Earth KMZ (.kmz)">
+          <option value="Microsoft Excel (.xls)">
+          <option value="Microsoft Powerpoint (.ppt)">
+          <option value="Microsoft Word (.doc)">
+      </datalist>
+
+      <input class="advanInputBox" list = "License" placeholder="not filtered by license" type="text">
+
+      <datalist id ="License">
+        <option value = "not filtered by license"></option>
+        <option value = "free to use or share"></option>
+        <option value = "free to use or share, even commercially">
+        <option value = "free to use share or modify">
+        <option value = "free to use, share or modify, even commercially">
+      </div>
+
+    <div id="bottomHalfExamplesDiv">
+      <p class="bottomExample"> Find pages in the language you select. </p>
+      <p class="bottomExample"> Find pages published in a particular region. </p>
+      <p class="bottomExample"> Find pages updated within the time you specify. </p>
+      <p class="bottomExample"> Search one site (like wikipedia.org) or limit your results to a domain like .edu, .org or .gov </p>
+      <p class="bottomExample"> Search for terms in the whole page, page title, or web address, or links to the page you're looking for. </p>
+      <p class="bottomExample"> Find pages in the format you prefer. </p>
+      <p class="bottomExample"> Find pages you are free to use yourself. </p>
+    </div>
+  </div>
+</div>
+
+<div class="upper-right">
+  <a class="upright" href="http://127.0.0.1:5500/KristopherPoston.github.io/index.html"> Google Search </a>
+  <a class="upright" href="http://127.0.0.1:5500/KristopherPoston.github.io/imageSearch.html"> Image Search </a>
+</div>    
+
+</body>
+</html>
